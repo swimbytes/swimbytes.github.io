@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Swim Bytes TBD</title>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="211" height="211" viewBox="0 0 211 211">
+    <defs>
+      <clipPath id="clip-path">
+        <circle id="mask" cx="105.5" cy="105.5" r="105.5" transform="translate(312 -1822)" fill="#fff" stroke="#707070" stroke-width="1"/>
+      </clipPath>
+    </defs>
+    <g id="circle" transform="translate(-312 1822)">
+      <g id="bg" transform="translate(312 -1822)" fill="none" stroke="none">
+        <circle cx="105.5" cy="105.5" r="105.5" stroke="none"/>
+        <circle cx="105.5" cy="105.5" r="105" fill="none"/>
+      </g>
+      <g id="water" clip-path="url(#clip-path)">
+        <path id="waveShape" d="M500,118.244v223.11H4V106.464c43.35,1.17,46.02,11.89,94.4,11.89,51.2,0,51.2-12,102.39-12s51.2,12,102.4,12,51.2-12,102.41-12C453.98,106.354,456.65,117.074,500,118.244Z" transform="translate(308 -1830.354)" fill="#04acff"/>
+      </g>
+    </g>
+  </svg>
+
+</body>
+
+<style>
+  svg{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    width:300px;
+    height:300px;
+    
+    display:block;
+  }
+  #water #waveShape {
+    animation-name: waveAction01;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+  }
+  
+  @keyframes waveAction01 {
+    0% {
+      transform: translate(300px, -1830px);
+    }
+    100% {
+      transform: translate(102px, -1830px);
+    }
+  }
+  
+</style>
+
+</html>
